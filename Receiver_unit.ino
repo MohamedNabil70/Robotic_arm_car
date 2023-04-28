@@ -4,10 +4,6 @@
 #include <RF24_config.h>
 #include <Servo.h>
 
-
-
-
-
 //Analog
 #define LEFT_THRESHOLD  400
 #define RIGHT_THRESHOLD 800
@@ -52,8 +48,6 @@ int enB = 4 ;
 int in3 = A2;
 int in4 = A3;
 
-
-
 RF24 radio(7, 8); // CSN, CE
 
 const uint64_t pipeIn = 0xF9E8F0F0E1LL; //IMPORTANT: The same as in the receiver 0xF9E8F0F0E1LL
@@ -74,7 +68,6 @@ int servo_gripper_pin = 3;
 int servo_side1_pin = 5;
 int servo_side2_pin = 10;
 int servo_base_pin = 9;
-
 
 //Assign default input received values
 void setInputDefaultValues()
@@ -128,34 +121,27 @@ void mapAndWriteCar()
 
   // NOTE: AT A TIME, THERE MAY BE NO COMMAND, ONE COMMAND OR TWO COMMANDS
 
-  // print command to serial and process command
   if (command & COMMAND_LEFT) {
     Serial.println("COMMAND LEFT");
     Car_Left();
-    // TODO: add your task here
   }
 
   if (command & COMMAND_RIGHT) {
     Serial.println("COMMAND RIGHT");
     Car_Right();
-    // TODO: add your task here
   }
 
   if (command & COMMAND_UP) {
     Serial.println("COMMAND UP");
     Car_Forward();
-    // TODO: add your task here
   }
 
   if (command & COMMAND_DOWN) {
     Serial.println("COMMAND DOWN");
-    Car_Backward();
-    // TODO: add your task here
+    Car_Backward();   
   }  
 
- delay(10);
-
-  
+ delay(10);  
 }
 
 void setup() {
