@@ -6,8 +6,6 @@
 #define VRX_PIN  A4 // Arduino pin connected to VRX pin
 #define VRY_PIN  A5 // Arduino pin connected to VRY pin
 
-
-
 RF24 radio(7, 8); // CSN, CE
 //const byte address[6] = "00001";
 const uint64_t pipeOut = 0xF9E8F0F0E1LL;   //IMPORTANT: The same as in the receiver 0xF9E8F0F0E1LL
@@ -24,8 +22,6 @@ int Pot_4;
                                             
 struct morsal Data;
 
-
-
 void setup() {
   radio.begin();
   radio.setDataRate(RF24_250KBPS);
@@ -39,9 +35,6 @@ void setup() {
 //It also adjust the deadband in joystick.
 //Jotstick  values range from 0-1023. But its center value is not always 511. It is little different.
 //So we need to add some deadband to center value. in our case 500-530. Any value in this deadband range is mapped to center 127.
-
-
-
 
 
 void loop() {
