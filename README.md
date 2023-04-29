@@ -1,7 +1,9 @@
 # Robotic_arm_car
 
-The project is a prototype for a car with a robot arm attached above it to hold any object for various uses. This prototype can be reworked in the future with bigger size and capability .
-The bigger scale project can be used it in inspection and handling hazardous work which is dangerous for human such as band aid in wars or Explosive detection. The car and arm use wireless control using Nrf24l01 Bluetooth Module with SPI protocol .
+We've developed a prototype car equipped with a robot arm that can hold and manipulate various objects. The car and arm are controlled wirelessly using an Nrf24l01 Bluetooth Module with SPI protocol.
+
+This prototype has the potential to be scaled up in size and capability for use in hazardous environments that pose a risk to human safety, such as war zones or explosive detection. With a larger robot arm, the car can be used for inspection and handling tasks that would otherwise be too dangerous for humans.
+ The car and arm use wireless control using Nrf24l01 Bluetooth Module with SPI protocol .
 
 - Components:
 
