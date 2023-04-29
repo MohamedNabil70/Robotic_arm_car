@@ -13,12 +13,14 @@ Bread Board DC Motors
 
 H-Bridge (L293D)
 
-Servo Motor (MG90S) Bluetooth Module (Nrf24101)
+Servo Motor (MG90S) 
+
+Bluetooth Module (Nrf24101)
 
 Joystick
 
 Potentiometer (10K)
 
-3D Robot Arm
+3D printed Robot Arm
 
 Car Chassis
